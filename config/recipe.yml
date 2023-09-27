@@ -39,6 +39,10 @@ modules:
       - zsh
       - zsh-autosuggestions
       - zsh-syntax-highlighting
+      # Shell tools
+      - fzf
+      - trash-cli
+
       
     remove:
       - firefox # default firefox removed in favor of flatpak
