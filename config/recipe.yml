@@ -70,5 +70,8 @@ modules:
       # - install-mullvad-vpn.sh
       # - install-vscode.sh
       - install-appimagelauncher.sh
+      - download-fonts.sh
+      - zshplugins.sh
+      - clean-repos.sh
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh
