@@ -31,7 +31,7 @@ modules:
       - nautilus-gsconnect
       # Python extension for VSCode Nautilus Extension
       # https://github.com/harry-cpp/code-nautilus
-      - python-nautilus
+      - nautilus-python
       # Battery
       - tlp
       - tlp-rdw
