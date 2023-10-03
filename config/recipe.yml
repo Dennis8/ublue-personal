@@ -29,6 +29,9 @@ modules:
       - gnome-shell-extension-gsconnect # GS connect for KDE connect
       # - webextension-gsconnect
       - nautilus-gsconnect
+      # Python extension for VSCode Nautilus Extension
+      # https://github.com/harry-cpp/code-nautilus
+      - python-nautilus
       # Battery
       - tlp
       - tlp-rdw
