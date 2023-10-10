@@ -33,7 +33,7 @@ modules:
       - nautilus-gsconnect
       # Python extension for VSCode Nautilus Extension
       # https://github.com/harry-cpp/code-nautilus
-      - nautilus-python
+      # - nautilus-python
       # Shells
       - starship
       - zsh
@@ -45,6 +45,8 @@ modules:
       - fzf # fuzzy file search
       - trash-cli # manages remove to trash
       - lm_sensors # check temperatures
+      # Container tools
+      - container-selinux # https://github.com/containers/podman/issues/20314
       
     remove:
       - firefox # default firefox removed in favor of flatpak
@@ -76,7 +78,7 @@ modules:
       - devpod # https://devpod.sh/ as an rpm
       # https://loft.sh/blog/devpod-release-community-providers/
       # - gnome-vrr # enables gnome-vrr for your image 
-      # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens 
+      - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens 
       - laptop # installs TLP and configures your system for laptop usage
 
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
