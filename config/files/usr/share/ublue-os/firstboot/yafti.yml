@@ -157,7 +157,7 @@ screens:
             # - VSCode: com.visualstudio.code
             - DBeaver Community: io.dbeaver.DBeaverCommunity
             - DB Browser for SQLite: org.sqlitebrowser.sqlitebrowser
-            # - Android Studio: com.google.AndroidStudio
+            - Android Studio: com.google.AndroidStudio
             - Podman Desktop: io.podman_desktop.PodmanDesktop
         Media:
           description: Tools for playing and editing media (audio, video, images)
