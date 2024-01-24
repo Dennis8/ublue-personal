@@ -44,9 +44,9 @@ modules:
       - lm_sensors # check temperatures
       # Container tools
       - podman-compose # docker-compose alternative
-			- podman-plugins
-			- podman-tui
-			- podmansh
+      - podman-plugins
+      - podman-tui
+      - podmansh
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
