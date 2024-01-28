@@ -56,6 +56,11 @@ modules:
       - docker-compose-plugin
       # Source control
       - gh
+      # Python
+      - python3.11
+      - python3.11-pip
+      - python3.10
+      - python3.10-pip
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -77,7 +82,7 @@ modules:
   # Bling: https://github.com/ublue-os/bling/tree/main/modules/bling
   - type: bling # configure what to pull in from ublue-os/bling
     install:
-      - justfiles # add "!include /usr/share/ublue-os/just/bling.just"
+      # - justfiles # add "!include /usr/share/ublue-os/just/bling.just"
                   # in your custom.just (added by default) or local justfile
       # - nix-installer # shell shortcuts for determinate system's nix installers
       - ublue-os-wallpapers
