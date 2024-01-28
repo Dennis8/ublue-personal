@@ -24,6 +24,7 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
+      - https://cli.github.com/packages/rpm/gh-cli.repo
     install:
       # System apps
       - langpacks-nl # Dutch language packs (systemwide)
@@ -53,6 +54,8 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
+      # Source control
+      - gh
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
