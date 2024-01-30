@@ -54,11 +54,14 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
+      - docker-compose
       # Source control
       - gh
       # Python
       - python3.11
       - python3.10
+      # Node
+      - nodejs
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
