@@ -54,14 +54,17 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
-      - docker-compose
       # Source control
       - gh
       # Python
       - python3.11
       - python3.10
       # Node
-      - nodejs
+      # - nodejs
+      # Requirements for Android studio https://developer.android.com/studio/install#64bit-libs
+      - zlib.i686
+      - ncurses-libs.i686
+      - bzip2-libs.i686
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
