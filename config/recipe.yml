@@ -56,11 +56,13 @@ modules:
       - docker-compose-plugin
       # Source control
       - gh
-      # Python
+      # Python versions for venv
       - python3.11
       - python3.10
-      # Node
-      # - nodejs
+      # Node and Java for react native
+      - nodejs
+      - java-17-openjdk-devel
+      - jq
       # Requirements for Android studio https://developer.android.com/studio/install#64bit-libs
       - zlib.i686
       - ncurses-libs.i686
